@@ -19,7 +19,7 @@ deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main 
 sudo apt update
 sudo apt update
 sudo apt -y uprade
-sudo apt install -y libcurl3-gnutls=7.47.0-1ubuntu2.14 zsh curl tmux screen tree
+sudo apt install -y python3-pip libcurl3-gnutls=7.47.0-1ubuntu2.14 zsh curl tmux screen tree
 sudo apt -y autoremove
 
 echo -e "\033[1;32m\n SpaceVIM \n...\033[0m"
