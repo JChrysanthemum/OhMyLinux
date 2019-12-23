@@ -14,8 +14,9 @@ deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-updates main mu
 deb-src http://mirrors.tuna.tsinghua.edu.cn/ubuntu-ports/ xenial-backports main multiverse restricted universe
 " > sources.list
 
-#sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
-#sudo mv sources.list /etc/apt/sources.list
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo mv sources.list /etc/apt/sources.list
+
 sudo apt update
 sudo apt update
 sudo apt -y uprade
@@ -28,3 +29,8 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 
 echo -e "\033[1;32m\n oh-my-zsh \n...\033[0m"
 curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash
+chsh -s /usr/bin/zsh
+
+echo -e "\033[1;32m\n install TF-2.0 \n...\033[0m"
+wget https://developer.download.nvidia.com/compute/redist/jp/v42/tensorflow-gpu/tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl
+pip3 install tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl Processing ./tensorflow_gpu-2.0.0+nv19.11-cp36-cp36m-linux_aarch64.whl
